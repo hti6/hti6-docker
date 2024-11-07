@@ -64,7 +64,7 @@ services:
       - "./config/supervisor/default.conf:/etc/supervisor/supervisord.conf"
     networks:
       default:
-        ipv4_address: 172.26.0.15
+        ipv4_address: 172.26.0.16
   zookeeper:
     image: confluentinc/cp-zookeeper:7.3.0
     container_name: zookeeper
