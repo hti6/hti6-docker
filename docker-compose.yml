@@ -4,7 +4,7 @@ services:
     image: nginx:1.27-alpine
     restart: always
     volumes:
-      - "./:/var/www:cached"
+      - "./src/hti6-frontend/dist:/etc/nginx/app"
       - "./config/certs/:/etc/nginx/certs"
       - "./config/nginx/${ENV}.conf:/etc/nginx/conf.d/default.conf"
     networks:
